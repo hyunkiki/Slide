@@ -67,23 +67,26 @@ body {
   justify-content: flex-end;
   text-align: center;
   line-height: 30px;
-  font-size: 30px;
+  font-size: 18px;
   color: #000;
   opacity: 0.54;
   background: none;
 
 
   &:hover {
-    color: blue;
-
+    color: orange;
   }
 }
 
 .swiper-pagination-bullet-active {
+  position: relative;
   font-weight: 700;
   opacity: 1;
 
   &::before {
+    position: absolute;
+    top: 5px;
+    right: 290px;
     content: "\f061";
     font-family: "Line Awesome Free";
     font-weight: 900;
